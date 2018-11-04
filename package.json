@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack-dev-server --config webpack.dev.config.js",
     "server": "NODE_ENV=development nodemon server/index.js",
-    "build": "webpack --mode production --config webpack.prod.config.js"
+    "build": "webpack --mode production --config webpack.prod.config.js",
+    "start": "NODE_ENV=production npm run build && node server/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
